@@ -1,0 +1,437 @@
+
+
+/* === HERO BACKGROUND === */
+.hero-section {
+    background: url("https://www.infinitiusa.com/content/dam/Infiniti/US/vehicles/discontinued/q50/pfa/infiniti-q50-luxury-sedan.jpg") center/cover no-repeat;
+    height: 500px;
+    position: relative;
+}
+
+/* Dark overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* Ensures menu appears above overlay */
+.top-bar {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+/* Logo */
+.logo {
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+/* Navigation menu */
+.menu .nav-link {
+    color: #ddd !important;
+    margin: 0 12px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.menu .nav-link:hover,
+.menu .nav-link.active {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+/* Contact info */
+.contact-info {
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+    .menu .nav-link {
+        padding: 5px 8px;
+    }
+}
+
+/* Card Container */
+.car-card {
+    background: #f6f2eb;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Car image */
+.car-img {
+    width: 90%;
+    height: auto;
+}
+
+/* Stars */
+.stars {
+    color: #c49a6c;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+/* More Details Button */
+.details-btn {
+    border: 1px solid #b89a78;
+    padding: 10px 25px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background: #b89a78;
+    color: #fff;
+    border-color: #b89a78;
+}
+
+.hero {
+position: relative;
+width: 100%;
+height: 400px;
+background: url('https://www.infinitiusa.com/content/dam/Infiniti/US/vehicles/discontinued/q50/pfa/infiniti-q50-luxury-sedan-xl.jpg') center/cover no-repeat;
+display: flex;
+align-items: center;
+color: white;
+padding: 20px;
+}
+.content {
+max-width: 400px;
+background: rgba(0,0,0,0.4);
+padding: 20px;
+border-radius: 10px;
+}
+h1 {
+margin: 0 0 10px;
+font-size: 2rem;
+line-height: 1.2;
+}
+p {
+margin: 0 0 20px;
+font-size: 1rem;
+}
+
+.phone {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+.hero {
+height: 70vh;
+}
+
+h1 {
+font-size: 1.6rem;
+}
+}
+
+
+
+.luxury {
+padding: 60px 20px;
+background: #fff;
+}
+.lux-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+max-width: 1200px;
+margin: auto;
+}
+.lux-text h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+.lux-text p {
+margin-bottom: 20px;
+color: #444;
+line-height: 1.6;
+}
+.lux-text ul {
+padding-left: 20px;
+list-style: none;
+}
+.lux-text ul li {
+margin-bottom: 10px;
+}
+.lux-images img {
+width: 100%;
+border-radius: 10px;
+}
+@media(max-width: 768px) {
+.lux-grid {
+grid-template-columns: 1fr;
+}
+}
+
+
+.comfort {
+padding: 60px 20px;
+background: #f7f7f7;
+}
+.comfort-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+max-width: 1200px;
+margin: auto;
+gap: 40px;
+align-items: center;
+}
+.comfort-text h2 {
+font-size: 2.2rem;
+margin-bottom: 10px;
+}
+.subtitle {
+display: block;
+font-size: 0.8rem;
+letter-spacing: 3px;
+color: #888;
+margin-bottom: 20px;
+}
+.comfort-text p {
+color: #555;
+line-height: 1.6;
+margin-bottom: 30px;
+}
+.view-btn {
+padding: 12px 26px;
+border: 1px solid #333;
+background: transparent;
+cursor: pointer;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-radius: 4px;
+}
+.comfort-img img {
+width: 100%;
+border-radius: 10px;
+}
+@media(max-width: 768px) {
+.comfort-grid {
+grid-template-columns: 1fr;
+}
+}
+
+
+.discount {
+width: 100%;
+margin: 0;
+padding: 0;
+}
+.discount-hero {
+width: 100%;
+height: 300px;
+background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8_nNfEJpL3Lhc_SIabUhihLDQ9-rVhGAGne19FZ1KVbAFCdY') center/cover no-repeat;
+display: flex;
+align-items: center;
+padding-left: 80px;
+}
+.discount-hero h2 {
+color: white;
+font-size: 2.2rem;
+line-height: 1.3;
+max-width: 500px;
+}
+@media(max-width: 768px) {
+.discount-hero {
+height: 200px;
+padding-left: 20px;
+}
+.discount-hero h2 {
+font-size: 1.5rem;
+}
+}
+
+
+
+.contact-form{
+    background: #373737; /* Purple Background */
+    color: #fff;
+    margin-top: 80px;
+}
+
+.contact-section {
+    padding: 60px 6%;
+}
+
+/* Title */
+.contact-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-title h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Layout wrapper */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Content */
+.contact-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-left h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    max-width: 420px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+/* Right Contact Box */
+.contact-right {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    color: #333;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px 12px;
+    margin-bottom: 18px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+form textarea {
+    height: 110px;
+    resize: none;
+}
+
+/* Button */
+.btn {
+    background: #373737;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #A5E2FF;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+.footer{
+    background: #A5E2FF;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+}
+
+.footer-main {
+max-width: 1200px;
+margin: 0 0 0 50px;
+padding-top: 40px;
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 40px;
+
+
+}
+.footer-about h3 {
+color: #c9b87c;
+margin-bottom: 15px;
+}
+.footer-links h4,
+.footer-services h4 {
+/*margin-bottom: 15px;*/
+font-size: 1rem;
+}
+.footer-links ul,
+.footer-services ul {
+list-style: none;
+padding: 0;
+}
+.footer-links li,
+.footer-services li {
+margin-bottom: 10px;
+letter-spacing: 1px;
+}
+.call {
+display: block;
+margin-top: 20px;
+letter-spacing: 2px;
+}
+.footer-bottom {
+text-align: center;
+padding-top: 20px;
+border-top: 1px solid #222;
+color: #777;
+}
+@media (max-width: 768px) {
+.footer-top {
+flex-direction: column;
+gap: 20px;
+}
+.footer-main {
+grid-template-columns: 1fr;
+}
+}
